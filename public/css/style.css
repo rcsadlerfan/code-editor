@@ -43,12 +43,7 @@ body {
     -webkit-animation-fill-mode: forwards;
 }
 
-/* Form */
-form {
-
-}
-
-.field {
+/* Form */.field {
     margin-top: 20px;
 }
 
