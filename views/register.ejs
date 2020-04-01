@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <%- include('partials/head') %>
 </head>
 <body>
-    <form action="/auth/register" method="POST">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <button type="submit">Register</button>
-    </form>
+    <%- include('partials/navbar') %>
+    <main>
+        <div class="login-container">
+            <h1 class="login-header">Create an account</h1>
+            <form action="/auth/register" method="POST">
+                <div class="field">
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                <div class="field">
+                    <input type="password" name="password" placeholder="********">
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
