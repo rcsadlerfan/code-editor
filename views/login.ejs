@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <%- include('partials/head') %>
 </head>
 <body>
-    <form action="/auth/login" method="POST">
-        <input type="text" name="username">
-        <input type="password" name="password">
-        <button type="submit">Login</button>
-    </form>
+    <%- include('partials/navbar') %>
+    <main>
+        <div class="login-container">
+            <h1 class="login-header">Login</h1>
+            <form action="/auth/login" method="POST">
+                <div class="field">
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                <div class="field">
+                    <input type="password" name="password" placeholder="********">
+                </div>
+                <button type="submit">Login</button>
+                <a href="/auth/register" class="register-link">Don't have an account?</a>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

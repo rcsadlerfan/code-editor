@@ -8,6 +8,12 @@ body {
     background: #efefef;
 }
 
+.login-container {
+    width: 35%;
+    margin: 50px auto;
+    text-align: center;
+}
+
 /* Navbar */
 .navbar {
     background: #3d3d3d;
@@ -35,6 +41,41 @@ body {
     -webkit-animation-name: navhover;
     -webkit-animation-duration: 0.2s;
     -webkit-animation-fill-mode: forwards;
+}
+
+/* Form */
+form {
+
+}
+
+.field {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    font-size: 1.0em;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 10px 0;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #066fd1;
+    color: #fff;
+}
+
+.register-link {
+    color: #0071db;
+    display: block;
+    margin-top: 10px;
 }
 
 /* Animtions */
