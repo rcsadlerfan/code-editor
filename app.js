@@ -37,7 +37,7 @@ function isLoggedIn(req, res, next) {
 app.use('/auth', require('./routes/auth'));
 
 app.get('/', (req, res) => {
-    res.send("Code Editor lel");
+    res.render("index");
 });
 
 app.get('/profile', isLoggedIn, (req, res) => {

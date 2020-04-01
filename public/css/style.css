@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #efefef;
+}
+
+/* Navbar */
+.navbar {
+    background: #3d3d3d;
+}
+
+.link, .brand {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.brand {
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+}
+
+.link:hover {
+    animation-name: navhover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: navhover;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Animtions */
+@keyframes navhover {
+    from { background: #3d3d3d; }
+    to { background-color: #636363; }
+}
