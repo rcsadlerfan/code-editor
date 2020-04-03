@@ -8,10 +8,24 @@ body {
     background: #efefef;
 }
 
+/* Layout */
+.container {
+    margin: 20px 0;
+}
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+}
+
 .login-container {
     width: 35%;
     margin: 50px auto;
     text-align: center;
+}
+
+.header {
+
 }
 
 /* Navbar */
@@ -43,7 +57,14 @@ body {
     -webkit-animation-fill-mode: forwards;
 }
 
-/* Form */.field {
+/* Profile */
+.avatar {
+    height: 150px;
+    width: 150px;
+}
+
+/* Form */
+.field {
     margin-top: 20px;
 }
 

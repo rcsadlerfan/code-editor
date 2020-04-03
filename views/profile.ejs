@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Profile</title>
+    <%- include('partials/head') %>
 </head>
 <body>
-    <h1><%= user.username %></h1>
+    <%- include('partials/navbar') %>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <img src="/img/avatar.jpeg" alt="<%= user.username %>" class="avatar">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
